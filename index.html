@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scrissors</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/dist/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">Rock Paper Scrissors</h1>
+    </header>
+
+    <section class="game container">
+
+        <aside class="game__score-board">
+            <div class="game__badge" id="user-label">User</div>
+            <div class="game__badge" id="computer-label">Computer</div>
+            <span class="game__score" id="game__user-score">0</span> :
+            <span class="game__score" id="game__computer-score">0</span>
+        </aside>
+
+        <aside class="game__result">
+            <p>Paper covers Rock. You win!</p>
+        </aside>
+
+        <aside class="game__choices">
+            <div class="game__choice" id="r">
+                <img class="game__img" src="/dist/images/Rock.png" alt="">
+            </div>
+            <div class="game__choice" id="p">
+                <img class="game__img" src="/dist/images/paper.png" alt="">
+            </div>
+            <div class="game__choice" id="s">
+                <img class="game__img" src="/dist/images/scrissors.png" alt="">
+            </div>
+        </aside>
+
+        <p class="game__action-message" id="action-message">Make your move!</p>
+    </section>
+
+
+    <!-- JS Main-->
+    <script src="/dist/js/script.js"></script>
+</body>
+
+</html>

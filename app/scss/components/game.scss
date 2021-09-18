@@ -1,0 +1,81 @@
+@use '../util/' as *;
+
+.game {
+  background-color: var(--body-color);
+
+  &__score-board {
+    border: 1px solid black;
+    max-width: rem(200);
+    min-width: 30%;
+    padding: 1rem;
+    margin: 2rem auto;
+    font-size: var(--l-font-size);
+    border-radius: 0.25rem;
+    text-align: center;
+
+    position: relative;
+  }
+
+  &__badge {
+    background: var(--first-color);
+    color: white;
+    font-size: var(--m-font-size);
+    padding: rem(10) rem(10);
+  }
+  &__result {
+    text-align: center;
+    font-size: var(--l-font-size);
+    font-weight: var(--font-medium);
+  }
+  &__choices {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    margin: 2.5rem 1rem;
+  }
+  &__choice {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+
+    height: rem(250);
+    max-height: rem(250);
+    height: rem(250);
+    max-width: rem(250);
+    background-color: #ffea00;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      border: 4px solid red;
+    }
+  }
+  &__img {
+    height: rem(250);
+    height: rem(250);
+  }
+  &__action-message {
+    text-align: center;
+    font-size: var(--l-font-size);
+    font-weight: var(--text-color);
+    color: black;
+  }
+}
+
+#user-label {
+  position: absolute;
+  left: -1.8rem;
+  bottom: 2rem;
+}
+
+#computer-label {
+  position: absolute;
+  right: -3rem;
+  bottom: 2rem;
+}
