@@ -1,0 +1,22 @@
+@use '../util/' as *;
+
+@include breakpoint-down(small) {
+  .game__img-wraper {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .game__choices {
+    grid-template-columns: repeat(1, max-content);
+    gap: 0.5rem;
+  }
+
+  .game__choice {
+    width: rem(120);
+    height: rem(120);
+  }
+  .game__img {
+    height: rem(90);
+    height: rem(90);
+  }
+}

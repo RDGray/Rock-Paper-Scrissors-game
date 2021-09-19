@@ -1,7 +1,25 @@
 @use '../util' as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@font-face {
+  font-family: "SequentialistBB";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_1_0.woff2")
+      format("woff2"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff")
+      format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SequentialistBB";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff2")
+      format("woff2"),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff")
+      format("woff");
+  font-style: italic;
+  font-weight: 400;
+}
 
 :root {
-  --body-font: "Poppins", sans-serif;
+  --body-font: "SequentialistBB", sans-serif;
 }

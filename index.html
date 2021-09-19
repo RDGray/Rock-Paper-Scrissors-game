@@ -16,20 +16,39 @@
         <h1 class="header__title">Rock Paper Scrissors</h1>
     </header>
 
-    <section class="game container">
+    <section class="game">
+
+        <div class="game__user-data">
+            <div class="game__user-wrapper">
+                <div class="game__badge game__badge--user" id="user-label">User</div>
+                <div class="game__hp-bar"></div>
+                <div class="game__mp-bar"></div>
+                <div class="game__img-wraper">
+                    <img class="game__user-img game__user-img--user" src="/dist/images/user.png" alt="">
+
+                    <div class="" id="nani_user"></div>
+                </div>
+            </div>
+
+            <div class="game__user-wrapper">
+                <div class="game__badge game__badge--computer" id="computer-label">Computer</div>
+                <div class="game__hp-bar"></div>
+                <div class="game__mp-bar"></div>
+                <div class="game__img-wraper">
+                    <img class="game__user-img  game__user-img--computer" src="/dist/images/computer.webp" alt="">
+
+                    <div class="" id="nani_computer"></div>
+
+                </div>
+            </div>
+        </div>
 
         <aside class="game__score-board">
-            <div class="game__badge" id="user-label">User</div>
-            <div class="game__badge" id="computer-label">Computer</div>
             <span class="game__score" id="user-score">0</span> :
             <span class="game__score" id="computer-score">0</span>
         </aside>
 
-        <aside class="game__result">
-            <p>Paper covers Rock. You win!</p>
-        </aside>
-
-        <aside class="game__choices">
+        <aside class="game__choices container">
             <div class="game__choice" id="r">
                 <img class="game__img" src="/dist/images/Rock.png" alt="">
             </div>
@@ -41,7 +60,13 @@
             </div>
         </aside>
 
-        <p class="game__action-message" id="action-message">Make your move!</p>
+        <aside class="game__result">
+            <p class="game__text game__text--user"></p>
+            <p class="game__text game__text--computer"></p>
+            <p class="game__text game__text--result">Choose your weapon!</p>
+        </aside>
+
+        <!-- <p class="game__action-message" id="action-message">Make your move!</p> -->
     </section>
 
 
