@@ -1,2 +1,2 @@
-"use strict";
+"use strict";var userScore=0,computerScore=0,userScore_span=document.getElementById("user-score"),computerScore_span=document.getElementById("computer-score"),scoreBoard_div=document.querySelector(".game__score-board"),result_div=document.querySelector(".game__result"),rock_div=document.getElementById("r"),paper_div=document.getElementById("p"),scrissors_div=document.getElementById("s");function getComputerChoice(){return["r","p","s"][Math.floor(3*Math.random())]}function game(e){console.log("zz "+e)}function main(){rock_div.addEventListener("click",(function(){game("r")})),paper_div.addEventListener("click",(function(){game("p")})),scrissors_div.addEventListener("click",(function(){game("s")}))}main();
 //# sourceMappingURL=script.js.map
